@@ -1,46 +1,24 @@
-# Getting Started with Create React App
+Описание задачи:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Необходимо разработать приложение для просмотра прогноза погоды. Приложение состоит из
+двух экранов:
 
-## Available Scripts
+-   Экран загрузки
+-   Информация о погоде
 
-In the project directory, you can run:
+Как только данные загружены, отображается экран с погодой. Он должен уметь отображать
+данные о погоде как минимум за пять дней для одной и той же локации.
 
-### `npm start`
+На экране погоды также должен быть переключатель формата вывода температуры между
+Цельсием (по умолчанию) и Фаренгейтом. При переключении все данные на экране должны
+отображаться в выбранном формате.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ниже переключателя формата температуры должны быть две стрелки для прокручивания списка
+карточек погоды (pageSize = 3).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   Стрелка влево отображается только при pageIndex > 0.
+-   Стрелка вправо отображается, когда есть данные для pageIndex + pageSize.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Под стрелочками отображаются карточки с погодой по дням – в ряд горизонтально, максимум 3
+карточки одновременно. Каждая карточка отображает прогноз погоды для одного дня и должна
+как минимум показывать среднюю температуру и дату для этого дня."
