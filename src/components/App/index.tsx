@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
 import { fetchDataThunk } from "../../redux/weatherSlice";
-import Loading from "../organisms/Loading";
-import WeatherInfo from "../organisms/WeatherInfo";
+import Loading from "../pages/Loading";
+import WeatherInfo from "../pages/WeatherInfo";
 
 const App: React.FC = () => {
     const isPending = useAppSelector((state) => state.isPending);
